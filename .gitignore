@@ -1,0 +1,32 @@
+# 1. Security (CRITICAL)
+# Never upload your Groq or database API keys!
+.env
+.env.local
+
+# 2. Machine Learning Weights & Vector Databases
+# Git will break if you try to upload gigabytes of model brains or ChromaDB states
+*.safetensors
+*.bin
+*.pt
+*.pth
+artifacts/
+chroma_db/
+vector_store/
+
+# 3. Datasets
+# Code goes to GitHub; massive data stays local or goes to cloud storage
+data/raw/
+data/processed/
+*.csv
+# (Note: You can safely delete this data line if your knowledge base JSONs are very small)
+
+# 4. Python Virtual Environments
+# Anyone downloading your code will build their own environment
+__pycache__/
+*.pyc
+
+# 5. Jupyter & IDE Junk
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
