@@ -269,9 +269,6 @@ MindGuard classifies inputs across two merged ontologies:
 - [ ] RAG integration — retrieve clinical CBT strategies from knowledge base
 - [ ] Multi-session memory with persistent user profiles
 - [ ] Longitudinal mood tracking with trend analysis
-- [ ] Crisis escalation workflow (auto-email / SMS alert)
-- [ ] Docker containerization + cloud deployment (AWS/GCP)
-- [ ] REST API layer for third-party EHR integration
 
 <br>
 
