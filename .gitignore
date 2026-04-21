@@ -30,3 +30,6 @@ __pycache__/
 .vscode/
 .idea/
 .DS_Store
+
+data/raw/temp*
+artifacts/database/*.sqlite3
