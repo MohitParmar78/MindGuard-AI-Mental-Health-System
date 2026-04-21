@@ -39,7 +39,7 @@ Most mental health chatbots are wrappers around GPT. **MindGuard is not.**
 
 | Capability | Generic Chatbot | **MindGuard** |
 |---|---|---|
-| Response generation | ✅ GPT/Claude API call | ✅ Groq LLaMA 3 with clinical system prompt |
+| Response generation | ✅ GPT/Claude API call | ✅ Groq LLaMA 70 with clinical system prompt |
 | Emotion detection | ❌ Guessed from LLM output | ✅ Dedicated XLM-RoBERTa (35 emotions, fine-tuned) |
 | Why did it predict that? | ❌ Black box | ✅ SHAP word-level attribution — mathematically proven |
 | Risk escalation | ❌ None | ✅ High / Medium / Low triage with visual alerts |
