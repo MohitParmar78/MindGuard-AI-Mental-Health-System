@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
 
 ```
@@ -329,3 +330,25 @@ MindGuard classifies inputs across two merged ontologies:
 *If this project helped you, a ⭐ on GitHub means more than you know.*
 
 </div>
+=======
+---
+title: MindGuard AI
+emoji: 🚀
+colorFrom: red
+colorTo: red
+sdk: docker
+app_port: 8501
+tags:
+- streamlit
+pinned: false
+short_description: Streamlit template space
+license: mit
+---
+
+# Welcome to Streamlit!
+
+Edit `/src/streamlit_app.py` to customize this app to your heart's desire. :heart:
+
+If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
+forums](https://discuss.streamlit.io).
+>>>>>>> 356433695c22e7cf0159fbc953d720d2de65b8c2

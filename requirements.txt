@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # --- Data Processing & File Handling ---
 pandas>=2.0.0
 pyarrow>=14.0.0
@@ -29,3 +30,8 @@ streamlit>=1.28.0
 plotly>=5.17.0
 
 openai-whisper
+=======
+altair
+pandas
+streamlit
+>>>>>>> 356433695c22e7cf0159fbc953d720d2de65b8c2
