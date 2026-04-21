@@ -170,7 +170,7 @@ artifacts/
 
 ```bash
 cd app
-streamlit run main.py
+streamlit run app.py
 ```
 
 Navigate to `http://localhost:8501` in your browser.
@@ -185,7 +185,7 @@ Navigate to `http://localhost:8501` in your browser.
 MindGuard-AI-Mental-Health-System/
 │
 ├── 📁 app/                          ← Streamlit application
-│   ├── main.py                      ← Entry point, page routing
+│   ├── app.py                      ← Entry point, page routing
 │   ├── api.py                       ← Cached model loaders (@st.cache_resource)
 │   └── components/
 │       ├── chat_ui.py               ← Chat interface + SHAP + badge rendering
