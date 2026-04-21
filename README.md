@@ -258,18 +258,6 @@ MindGuard classifies inputs across two merged ontologies:
 
 ---
 
-## ◈ Screenshots
-
-> *(Replace the placeholder paths below with actual screenshots from your running app)*
-
-| Chat Companion | Clinical Dashboard | SHAP Word-Level XAI |
-|---|---|---|
-| ![Chat](docs/screenshots/chat.png) | ![Dashboard](docs/screenshots/dashboard.png) | ![SHAP](docs/screenshots/shap.png) |
-
-<br>
-
----
-
 ## ◈ Roadmap
 
 - [x] XLM-RoBERTa 35-emotion fine-tuned classifier
