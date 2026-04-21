@@ -33,6 +33,13 @@
 
 <br>
 
+### 🏗️ Core Architecture:
+* **The Brain (Inference):** A fine-tuned XLM-RoBERTa model classifying 35 distinct emotional states and determining clinical risk levels (High/Medium/Low).
+* **The Logic (Custom RAG):** A custom-built Retrieval-Augmented Generation pipeline utilizing ChromaDB to fetch verified psychological coping strategies based on the live diagnosis.
+* **The Voice (LLM Generation):** Groq API integration (Llama-3.3-70b) seamlessly weaves the retrieved context into conversational empathy.
+* **The Proof (XAI):** Real-time SHAP integration generating interactive HTML visualizations to prove the mathematical weight of specific words on the model's prediction.
+* **The Interface:** A responsive Streamlit dashboard featuring Whisper-powered audio input, real-time metric tracking, and decoupled Hugging Face Model Hub weight loading.
+
 ## ◈ What Makes This Different
 
 Most mental health chatbots are wrappers around GPT. **MindGuard is not.**
