@@ -1,0 +1,1335 @@
+[
+    {
+        "id": "cbt_panic_001",
+        "primary_emotion": "Panic",
+        "target_risk_level": "High",
+        "category": "Sensory Grounding",
+        "strategy_name": "The 5-4-3-2-1 Grounding Technique",
+        "tags": ["panic attack", "dissociation", "immediate relief", "breathing"],
+        "source": "Standard Cognitive Behavioral Therapy (CBT)",
+        "content": "When experiencing a panic attack, use the 5-4-3-2-1 method to ground yourself in the present. Identify 5 things you can see, 4 things you can touch, 3 things you can hear, 2 things you can smell, and 1 thing you can taste. This interrupts the brain's panic loop and forces the nervous system to process reality."
+    },
+    {
+        "id": "cbt_anxiety_001",
+        "primary_emotion": "Anxiety",
+        "target_risk_level": "Medium",
+        "category": "Breathwork",
+        "strategy_name": "Box Breathing",
+        "tags": ["stress", "nervousness", "heart rate", "calming"],
+        "source": "Clinical Breathwork Guidelines",
+        "content": "To lower heart rate and reduce physical anxiety symptoms, practice Box Breathing. Inhale deeply for 4 seconds, hold your breath for 4 seconds, exhale slowly for 4 seconds, and hold your lungs empty for 4 seconds. Repeat this cycle 4 times to signal safety to your vagus nerve."
+    },
+    {
+        "id": "cbt_depression_001",
+        "primary_emotion": "Depression",
+        "target_risk_level": "High",
+        "category": "Behavioral Activation",
+        "strategy_name": "Micro-Tasking",
+        "tags": ["burnout", "motivation", "fatigue", "executive dysfunction"],
+        "source": "Behavioral Activation Therapy (BAT)",
+        "content": "When feeling a depressive lack of motivation, focus entirely on micro-tasks. Do not try to clean the whole room; just take one single cup to the kitchen. Accomplishing a micro-task triggers a small dopamine release, making the very next task slightly easier to start."
+    },
+
+    {
+        "id": "fin_001",
+        "primary_emotion": "Stress",
+        "target_risk_level": "Medium",
+        "category": "Financial Stress",
+        "strategy_name": "Worry Postponement & Scheduled Containment",
+        "tags": ["debt", "rumination", "sleep disruption"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "When intrusive thoughts about money disrupt your focus, write the specific financial fear on a piece of paper and physically place it in a 'worry jar'. Assign a strict 15-minute window (e.g., 4:00 PM) to review these fears. Outside that window, tell your brain: 'This is logged and will be handled during Worry Time.'"
+    },
+    {
+        "id": "fin_002",
+        "primary_emotion": "Anxiety",
+        "target_risk_level": "High",
+        "category": "Financial Stress",
+        "strategy_name": "The Downward Arrow Technique",
+        "tags": ["catastrophizing", "core beliefs", "bankruptcy fear"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "Identify the surface automatic thought (e.g., 'I won't be able to pay rent'). Ask yourself: 'If that happens, what is the worst part about it?' Keep asking this for each subsequent answer until you hit the core belief (e.g., 'I will be abandoned by my family'). Address the core fear of abandonment directly, separating it from your bank balance."
+    },
+    {
+        "id": "fin_003",
+        "primary_emotion": "fear",
+        "target_risk_level": "Medium",
+        "category": "Financial Stress",
+        "strategy_name": "Cognitive Defusion: Labeling the Story",
+        "tags": ["panic", "loss of control", "overthinking"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "When terrified of financial ruin, alter how you speak to yourself. Instead of saying 'I am going broke,' say out loud, 'I am having the thought that I am going broke.' This linguistic shift introduces psychological distance, breaking the illusion that a thought is an absolute, unavoidable reality."
+    },
+    {
+        "id": "fin_004",
+        "primary_emotion": "realization",
+        "target_risk_level": "Low",
+        "category": "Financial Stress",
+        "strategy_name": "Radical Acceptance of Current Baseline",
+        "tags": ["denial", "budgeting", "reality check"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "Acknowledge your exact debt or low balance without judgment or defense mechanisms. Say, 'My account balance is exactly $X, and fighting this reality only causes suffering.' Acceptance is not approval; it is simply acknowledging the starting line so you can accurately strategize your next move."
+    },
+    {
+        "id": "fin_005",
+        "primary_emotion": "nervousness",
+        "target_risk_level": "Medium",
+        "category": "Financial Stress",
+        "strategy_name": "Circle of Control Mapping",
+        "tags": ["inflation", "market drops", "agency"],
+        "source": "Stoic Philosophy & CBT",
+        "content": "Draw two concentric circles. In the outer circle, write financial factors you cannot control (e.g., interest rates, inflation, job market). In the inner circle, write what you can control (e.g., cancelling a subscription, updating your resume). Direct 100% of your current executive function strictly to the inner circle."
+    },
+    {
+        "id": "fin_006",
+        "primary_emotion": "disappointment",
+        "target_risk_level": "Medium",
+        "category": "Financial Stress",
+        "strategy_name": "Values-Based Auditing",
+        "tags": ["shame", "spending habits", "lifestyle creep"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "When feeling shame over a lack of wealth or 'wasted' money, clarify your top three core life values (e.g., family, creativity, health). Review your recent expenses and label which ones served those values and which served ego or anxiety. Realign your limited budget to only fund your defined values, reducing the psychological sting of frugality."
+    },
+    {
+        "id": "fin_007",
+        "primary_emotion": "sadness",
+        "target_risk_level": "Medium",
+        "category": "Financial Stress",
+        "strategy_name": "Behavioral Activation: Zero-Cost Joy",
+        "tags": ["poverty fatigue", "isolation", "depression"],
+        "source": "Behavioral Activation Therapy (BAT)",
+        "content": "Financial depletion often causes withdrawal from pleasurable activities. Combat this by scheduling one specific, zero-cost activity today (e.g., walking in a specific park, reading a library book, calling a friend). This prevents the brain from conflating 'lack of money' with 'inability to experience joy'."
+    },
+    {
+        "id": "fin_008",
+        "primary_emotion": "anger",
+        "target_risk_level": "High",
+        "category": "Financial Stress",
+        "strategy_name": "Opposite Action: Opening the Mail",
+        "tags": ["avoidance", "late fees", "denial"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When anger or fear makes you avoid looking at bills, your urge is to hide. Use 'Opposite Action'. Approach the bills, hold them in your hand, take a slow breath, and open them. Acting contrary to the avoidance urge proves to your nervous system that you can survive the discomfort."
+    },
+    {
+        "id": "fin_009",
+        "primary_emotion": "optimism",
+        "target_risk_level": "Low",
+        "category": "Financial Stress",
+        "strategy_name": "Implementation Intentions (If-Then Planning)",
+        "tags": ["planning", "saving", "habit building"],
+        "source": "Cognitive Psychology",
+        "content": "Harness moments of financial motivation by creating strict 'If-Then' algorithms for your behavior. Write down: 'IF I am tempted to buy an item over $50 online, THEN I will force a 24-hour waiting period before checking out.' This bypasses decision fatigue in the moment."
+    },
+    {
+        "id": "fin_010",
+        "primary_emotion": "embarrassment",
+        "target_risk_level": "Medium",
+        "category": "Financial Stress",
+        "strategy_name": "Externalizing the Shame Narrative",
+        "tags": ["status", "comparative suffering", "guilt"],
+        "source": "Narrative Therapy",
+        "content": "When feeling embarrassed about your job or income, separate your identity from the capitalist framework. Write a brief paragraph personifying 'The Economy' as an external entity with its own flaws. Reframe your narrative from 'I am a failure' to 'I am navigating a hostile external system with the resources I currently have.'"
+    },
+    {
+        "id": "body_001",
+        "primary_emotion": "disgust",
+        "target_risk_level": "High",
+        "category": "Body Image Issues",
+        "strategy_name": "Body Neutrality: Functional Focus",
+        "tags": ["self-hatred", "mirror checking", "dysmorphia"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "When feeling intense physical disgust, stop trying to force yourself to feel 'beautiful.' Instead, state out loud three purely functional things your body is doing for you right now (e.g., 'My lungs are processing oxygen,' 'My legs are holding me upright'). Shift the metric from aesthetics to utility."
+    },
+    {
+        "id": "body_002",
+        "primary_emotion": "sadness",
+        "target_risk_level": "Medium",
+        "category": "Body Image Issues",
+        "strategy_name": "Self-Compassion Break",
+        "tags": ["aging", "weight gain", "grief"],
+        "source": "Mindful Self-Compassion (Neff)",
+        "content": "Place your hand over your heart to trigger oxytocin release. Say internally: 'This is a moment of suffering. Suffering is a normal part of the human experience. May I be kind to myself in this moment.' Acknowledge the pain of body changes without validating the self-criticism."
+    },
+    {
+        "id": "body_003",
+        "primary_emotion": "disapproval",
+        "target_risk_level": "Medium",
+        "category": "Body Image Issues",
+        "strategy_name": "Externalizing the Inner Critic",
+        "tags": ["negative self-talk", "eating disorders", "shame"],
+        "source": "Narrative Therapy",
+        "content": "Give your hyper-critical internal voice a ridiculous name or persona (e.g., 'The Snobby Fashion Critic'). When you hear thoughts like 'Your arms look terrible,' respond to the persona: 'Thanks for the input, Snob, but I'm trying to live my life right now.' This breaks over-identification with the cruel thought."
+    },
+    {
+        "id": "body_004",
+        "primary_emotion": "fear",
+        "target_risk_level": "High",
+        "category": "Body Image Issues",
+        "strategy_name": "Exposure and Response Prevention (ERP)",
+        "tags": ["body checking", "compulsions", "OCD"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "If you compulsively check your reflection or pinch your skin, commit to a 30-minute exposure period. Wear an outfit that triggers mild discomfort, and strictly refuse to look in a mirror or touch the area. Sit with the spike in anxiety until your nervous system realizes you are not in actual danger."
+    },
+    {
+        "id": "body_005",
+        "primary_emotion": "anger",
+        "target_risk_level": "High",
+        "category": "Body Image Issues",
+        "strategy_name": "Opposite Action: Reclaiming Space",
+        "tags": ["isolation", "hiding", "shame"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When body hatred makes you want to cancel plans, stay home, and wear baggy clothes, do the exact opposite. Put on clothes that fit your current body, stand up straight, and go out into public. Action precedes emotion; taking up space rewires the brain to stop acting like prey."
+    },
+    {
+        "id": "body_006",
+        "primary_emotion": "embarrassment",
+        "target_risk_level": "Medium",
+        "category": "Body Image Issues",
+        "strategy_name": "Mirror Retraining",
+        "tags": ["focusing on flaws", "dysmorphia", "perception"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "Stand in front of a mirror and intentionally describe your body using only clinical, objective, non-judgmental terms. Instead of 'my stomach is gross,' say 'my torso has skin and fat to protect my organs.' Correct any subjective insults immediately with a neutral biological fact."
+    },
+    {
+        "id": "body_007",
+        "primary_emotion": "Stress",
+        "target_risk_level": "Medium",
+        "category": "Body Image Issues",
+        "strategy_name": "Cognitive Restructuring: All-or-Nothing Checking",
+        "tags": ["diet culture", "perfectionism", "control"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "Identify black-and-white thinking regarding food or exercise (e.g., 'I ate a cookie, the day is ruined'). Dispute this actively: 'A cookie provides energy. My body processes it just like other foods. One choice does not undo my overall health.' Replace the extreme binary with a realistic spectrum."
+    },
+    {
+        "id": "body_008",
+        "primary_emotion": "grief",
+        "target_risk_level": "Medium",
+        "category": "Body Image Issues",
+        "strategy_name": "Mourning the 'Ideal'",
+        "tags": ["chronic illness", "aging", "postpartum"],
+        "source": "Grief Therapy",
+        "content": "Allow yourself 15 minutes to genuinely grieve the body you used to have, or the 'ideal' body you never achieved. Cry or write about the loss. Acknowledging this as a valid grief process stops you from masking sadness with misplaced self-hatred."
+    },
+    {
+        "id": "body_009",
+        "primary_emotion": "nervousness",
+        "target_risk_level": "Low",
+        "category": "Body Image Issues",
+        "strategy_name": "Somatic Tracking",
+        "tags": ["hyper-awareness", "discomfort", "interoception"],
+        "source": "Pain Reprocessing Therapy (PRT)",
+        "content": "When hyper-fixated on an uncomfortable physical sensation (like how your thighs touch), close your eyes. Observe the sensation purely as physical data (pressure, heat, tension) without assigning the label of 'bad' or 'ugly'. Remind your brain: 'This is a safe sensation, it is just pressure.'"
+    },
+    {
+        "id": "body_010",
+        "primary_emotion": "neutral",
+        "target_risk_level": "Low",
+        "category": "Body Image Issues",
+        "strategy_name": "Urge Surfing",
+        "tags": ["skin picking", "dietary restriction", "mindfulness"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When the urge to restrict food or pick at your skin arises, visualize the urge as an ocean wave. Do not fight it, but do not act on it. Watch it peak in intensity and then naturally crash and recede. Know that you can experience an intense urge without obeying it."
+    },
+    {
+        "id": "exist_001",
+        "primary_emotion": "fear",
+        "target_risk_level": "High",
+        "category": "Existential Dread",
+        "strategy_name": "Dropping Anchor",
+        "tags": ["void", "meaninglessness", "panic"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "When overwhelmed by the vastness of the universe or the finality of death, plant your feet firmly on the floor. Push down hard. Notice your back against the chair. Say aloud: 'There is a universe, but I am in this room, on this chair, right now.' Grounding in immediate physics cuts through abstract panic."
+    },
+    {
+        "id": "exist_002",
+        "primary_emotion": "confusion",
+        "target_risk_level": "Medium",
+        "category": "Existential Dread",
+        "strategy_name": "Values Clarification",
+        "tags": ["purpose", "directionless", "apathy"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "If you feel life has no inherent meaning, accept that as a premise. Then, construct your own. Pick one area (e.g., being a good friend, creating art, learning). Commit to one small action today that serves that chosen value. Meaning is not found; it is actively built through localized behavior."
+    },
+    {
+        "id": "exist_003",
+        "primary_emotion": "realization",
+        "target_risk_level": "Medium",
+        "category": "Existential Dread",
+        "strategy_name": "Meaning-Making & Tragic Optimism",
+        "tags": ["suffering", "nihilism", "acceptance"],
+        "source": "Logotherapy (Frankl)",
+        "content": "When facing the inescapable suffering of life, ask yourself: 'How can I take a stance of dignity toward this suffering?' Find a way to extract a lesson or a piece of resilience from the pain. Transform the dread into a deep, defiant empathy for others experiencing the same human condition."
+    },
+    {
+        "id": "exist_004",
+        "primary_emotion": "sadness",
+        "target_risk_level": "High",
+        "category": "Existential Dread",
+        "strategy_name": "The Premeditation of Evils (Negative Visualization)",
+        "tags": ["loss", "death anxiety", "impermanence"],
+        "source": "Stoic Philosophy",
+        "content": "Spend 5 minutes meditating on the eventual loss of everything you love. Lean into the sadness of impermanence. Then, open your eyes and look at your life right now. The goal is to trigger a profound, urgent sense of gratitude for the temporary existence of the people and things around you."
+    },
+    {
+        "id": "exist_005",
+        "primary_emotion": "grief",
+        "target_risk_level": "High",
+        "category": "Existential Dread",
+        "strategy_name": "Radical Acceptance of Impermanence",
+        "tags": ["death", "aging", "loss of time"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "Stop fighting the reality of time passing. Say out loud: 'Everything is temporary, and that is the nature of reality. Fighting this causes my suffering.' Acceptance frees up the cognitive energy you are wasting on wishing the universe operated by different physical laws."
+    },
+    {
+        "id": "exist_006",
+        "primary_emotion": "Anxiety",
+        "target_risk_level": "Medium",
+        "category": "Existential Dread",
+        "strategy_name": "Zooming In (Gestalt Phenomenological Focus)",
+        "tags": ["big picture overwhelm", "insignificance", "focus"],
+        "source": "Gestalt Therapy",
+        "content": "Existential dread happens when you zoom out too far. Intentionally zoom in. Focus entirely on the sensory experience of a micro-task: making tea, washing a dish, or listening to a song. Confine your awareness strictly to a 3-foot radius around your body."
+    },
+    {
+        "id": "exist_007",
+        "primary_emotion": "disappointment",
+        "target_risk_level": "Medium",
+        "category": "Existential Dread",
+        "strategy_name": "Writing a Legacy Letter",
+        "tags": ["unfulfilled dreams", "regret", "purpose"],
+        "source": "Narrative Therapy",
+        "content": "If you feel your life hasn't mattered, write a letter to someone you care about (or a hypothetical future person) detailing the hardest lessons you've learned. Framing your struggles and disappointments as wisdom to be passed down transforms 'wasted time' into 'valuable data'."
+    },
+    {
+        "id": "exist_008",
+        "primary_emotion": "Stress",
+        "target_risk_level": "Medium",
+        "category": "Existential Dread",
+        "strategy_name": "Defusion: The 'Just a Story' Technique",
+        "tags": ["solipsism", "simulation theory", "obsessive thoughts"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "When trapped in looping thoughts about reality or simulation theories, label the thought process. Say, 'My brain is currently telling me the 'Simulation Story' again.' Treat the existential thought like a boring movie playing in the background while you go about your actual, physical day."
+    },
+    {
+        "id": "exist_009",
+        "primary_emotion": "curiosity",
+        "target_risk_level": "Low",
+        "category": "Existential Dread",
+        "strategy_name": "Socratic Questioning of the Void",
+        "tags": ["nihilism", "philosophy", "intellectualizing"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "If you conclude 'nothing matters,' challenge the premise. Ask: 'If nothing matters, why am I distressed that nothing matters? The distress itself proves that I value meaning.' Use logic to dismantle the absolute nature of your nihilism and uncover your hidden desire for connection."
+    },
+    {
+        "id": "exist_010",
+        "primary_emotion": "neutral",
+        "target_risk_level": "Low",
+        "category": "Existential Dread",
+        "strategy_name": "Somatic Grounding: Temperature Variance",
+        "tags": ["dissociation", "derealization", "numbness"],
+        "source": "Somatic Experiencing",
+        "content": "When feeling disconnected from reality (derealization), hold an ice cube in one hand and a mug of hot tea in the other. Focus rapidly shifting your attention between the extreme cold and the extreme heat. The intense, contrasting physical data pulls your brain out of abstract detachment."
+    },
+    {
+        "id": "care_001",
+        "primary_emotion": "caring",
+        "target_risk_level": "Medium",
+        "category": "Caregiver Burnout",
+        "strategy_name": "DEAR MAN for Boundary Setting",
+        "tags": ["enmeshment", "over-functioning", "asking for help"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "Use this script to ask a relative for help or set a limit: Describe the situation objectively, Express your feelings clearly ('I am exhausted'), Assert your need ('I need you to take the Thursday shift'), Reinforce the benefit ('This ensures Mom gets better care'). Stay Mindful, Appear confident, and Negotiate if needed."
+    },
+    {
+        "id": "care_002",
+        "primary_emotion": "annoyance",
+        "target_risk_level": "High",
+        "category": "Caregiver Burnout",
+        "strategy_name": "The STOP Skill",
+        "tags": ["frustration", "snapping", "reactivity"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When a patient or loved one repeatedly asks the same question or refuses help, Stop immediately. Take a step back (literally step out of the room). Observe your spiking heart rate and angry thoughts. Proceed mindfully—choose an intentional response rather than snapping defensively."
+    },
+    {
+        "id": "care_003",
+        "primary_emotion": "anger",
+        "target_risk_level": "High",
+        "category": "Caregiver Burnout",
+        "strategy_name": "FAST Skill for Self-Respect",
+        "tags": ["resentment", "martyrdom", "exploitation"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "Maintain your self-respect when caregiving. Be Fair to yourself and the patient. Avoid over-apologizing for taking breaks. Stick to your values (you are allowed to rest). Be Truthful; do not pretend you are fine if you are burning out. Honesty prevents explosive resentment later."
+    },
+    {
+        "id": "care_004",
+        "primary_emotion": "remorse",
+        "target_risk_level": "Medium",
+        "category": "Caregiver Burnout",
+        "strategy_name": "Self-Compassion: 'Just Like Me'",
+        "tags": ["guilt", "not doing enough", "mistakes"],
+        "source": "Mindfulness-Based Stress Reduction (MBSR)",
+        "content": "When feeling guilty for losing your patience, remind yourself: 'There are thousands of caregivers in the world feeling this exact same frustration right now. I am human, I am fatigued, and my reaction makes sense given the load I carry.' Depersonalize the guilt."
+    },
+    {
+        "id": "care_005",
+        "primary_emotion": "Depression",
+        "target_risk_level": "High",
+        "category": "Caregiver Burnout",
+        "strategy_name": "Behavioral Activation: Micro-Respite",
+        "tags": ["hopelessness", "loss of self", "fatigue"],
+        "source": "Behavioral Activation Therapy (BAT)",
+        "content": "You cannot wait for a 'week off' to recover. Schedule 10-minute micro-respites daily where you engage in an identity-affirming activity unrelated to caregiving (e.g., playing a guitar, reading a thriller). You must actively maintain a sliver of your non-caregiver identity to survive."
+    },
+    {
+        "id": "care_006",
+        "primary_emotion": "Stress",
+        "target_risk_level": "High",
+        "category": "Caregiver Burnout",
+        "strategy_name": "TIPP: Paced Breathing",
+        "tags": ["crisis", "medical emergencies", "hyperventilation"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "During a sudden medical issue or caregiving crisis, override your fight-or-flight response. Breathe in for 5 seconds, and breathe out for 7 seconds. Making the exhale longer than the inhale forcibly slows your heart rate, allowing your prefrontal cortex to make rational medical decisions."
+    },
+    {
+        "id": "care_007",
+        "primary_emotion": "disappointment",
+        "target_risk_level": "Low",
+        "category": "Caregiver Burnout",
+        "strategy_name": "Radical Acceptance of Illness Progression",
+        "tags": ["dementia", "terminal illness", "denial"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "Stop fighting the fact that your loved one is declining despite your hard work. Repeat: 'I am doing everything right, and the disease is still progressing. I cannot cure this; I can only care.' Severing your sense of failure from their biological decline is crucial for survival."
+    },
+    {
+        "id": "care_008",
+        "primary_emotion": "grief",
+        "target_risk_level": "High",
+        "category": "Caregiver Burnout",
+        "strategy_name": "Processing Ambiguous Grief",
+        "tags": ["anticipatory grief", "personality changes", "loss"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "Acknowledge that you are grieving someone who is still alive. Write down the specific things you miss about who they used to be before the illness or injury. Validating 'Ambiguous Loss' helps process the complex sorrow that occurs when a physical body is present but the mind/relationship has changed."
+    },
+    {
+        "id": "care_009",
+        "primary_emotion": "nervousness",
+        "target_risk_level": "Medium",
+        "category": "Caregiver Burnout",
+        "strategy_name": "Check the Facts on 'Enough'",
+        "tags": ["hyper-vigilance", "worry", "perfectionism"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When panicked that you missed a medication or aren't doing enough, write down strictly the verifiable facts. (e.g., 'Mom is fed, meds were taken at 8 AM, she is resting'). Separate the factual reality of safety from your emotional feeling of impending doom."
+    },
+    {
+        "id": "care_010",
+        "primary_emotion": "Stress",
+        "target_risk_level": "High",
+        "category": "Caregiver Burnout",
+        "strategy_name": "PLEASE Skill for Vulnerability Reduction",
+        "tags": ["exhaustion", "self-neglect", "physical health"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "Treat physical illness, balance eating, avoid mood-altering drugs, get balanced sleep, and exercise. As a caregiver, you treat your own physical neglect as a badge of honor. Reframe self-care as tactical maintenance: 'If the machine (me) breaks, the patient suffers. I must eat to operate.'"
+    },
+    {
+        "id": "overwhelm_001",
+        "primary_emotion": "Stress",
+        "target_risk_level": "High",
+        "category": "General Overwhelm",
+        "strategy_name": "TIPP: Temperature (Mammalian Dive Reflex)",
+        "tags": ["meltdown", "hysteria", "crisis reset"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When emotional arousal is at an absolute maximum and you cannot think, hold your breath and submerge your face in a bowl of ice water for 30 seconds (or place an ice pack on your eyes and cheeks). This triggers the mammalian dive reflex, rapidly dropping heart rate and forcing parasympathetic regulation."
+    },
+    {
+        "id": "overwhelm_002",
+        "primary_emotion": "Anxiety",
+        "target_risk_level": "Medium",
+        "category": "General Overwhelm",
+        "strategy_name": "Brain Dump & Eisenhower Matrix",
+        "tags": ["executive dysfunction", "task paralysis", "to-do list"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "When paralyzed by too many tasks, write every single thought and to-do item on a piece of paper. Then, plot them on a 2x2 grid: Urgent/Important, Not Urgent/Important, Urgent/Not Important, Not Urgent/Not Important. Only execute the top-left quadrant today. Ignore the rest."
+    },
+    {
+        "id": "overwhelm_003",
+        "primary_emotion": "Anxiety",
+        "target_risk_level": "High",
+        "category": "General Overwhelm",
+        "strategy_name": "Somatic Pendulation",
+        "tags": ["panic attack", "chest tightness", "trauma"],
+        "source": "Somatic Experiencing",
+        "content": "Focus your attention on the area of your body experiencing the most overwhelming distress (e.g., a tight chest). Then, explicitly shift your attention to a completely neutral or calm part of your body (e.g., your right big toe). Swing your focus back and forth to teach your nervous system that not all of you is in danger."
+    },
+    {
+        "id": "overwhelm_004",
+        "primary_emotion": "Suicidal",
+        "target_risk_level": "High",
+        "category": "General Overwhelm",
+        "strategy_name": "Crisis Survival: ACCEPTS Skill",
+        "tags": ["crisis", "self-harm urges", "distress tolerance"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When urges to self-harm peak, focus solely on surviving the next 10 minutes without making things worse. Use Activities (do a puzzle), Contributing (help someone else), Comparisons (watch a sad movie), Emotions (listen to upbeat music), Pushing away (visualize locking the thought in a box), Thoughts (count backward from 100 by 7s), and Sensations (hold ice)."
+    },
+    {
+        "id": "overwhelm_005",
+        "primary_emotion": "Bipolar",
+        "target_risk_level": "High",
+        "category": "General Overwhelm",
+        "strategy_name": "Social Rhythm Therapy Routing",
+        "tags": ["mania", "sleep disruption", "dysregulation"],
+        "source": "Interpersonal and Social Rhythm Therapy (IPSRT)",
+        "content": "When feeling the chaotic escalation of a manic or hypomanic swing, aggressively lock down your circadian rhythms. Go to bed, wake up, and eat meals at the exact same time down to the minute. Biological predictability acts as a scaffolding to contain neurochemical volatility."
+    },
+    {
+        "id": "overwhelm_006",
+        "primary_emotion": "fear",
+        "target_risk_level": "Medium",
+        "category": "General Overwhelm",
+        "strategy_name": "Probability vs. Possibility Check",
+        "tags": ["paranoia", "worst-case scenario", "future tripping"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "When overwhelmed by a terrifying future scenario, ask: 'Is this merely possible, or is it statistically probable?' Write down the actual evidence that the disaster will happen, versus the evidence that you will survive and adapt. Stop treating a 1% possibility like a 99% certainty."
+    },
+    {
+        "id": "overwhelm_007",
+        "primary_emotion": "confusion",
+        "target_risk_level": "Low",
+        "category": "General Overwhelm",
+        "strategy_name": "The 'Next Right Step' Focus",
+        "tags": ["brain fog", "decision fatigue", "stuck"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "When totally overwhelmed by the complexity of life, abandon the 5-year plan and the 1-month plan. Ask yourself only: 'What is the very next physical action I need to take to align with my values?' It might be 'drink a glass of water.' Do that, and then ask the question again."
+    },
+    {
+        "id": "overwhelm_008",
+        "primary_emotion": "nervousness",
+        "target_risk_level": "Medium",
+        "category": "General Overwhelm",
+        "strategy_name": "Box Breathing (Square Breathing)",
+        "tags": ["jitters", "stage fright", "vagus nerve"],
+        "source": "Clinical Breathwork Guidelines",
+        "content": "To quickly lower a spiking heart rate, visualize a square. Inhale for 4 seconds, hold full for 4 seconds, exhale for 4 seconds, hold empty for 4 seconds. Repeat 4 times. This balanced ratio forcefully engages the vagus nerve, signaling biological safety to the brain."
+    },
+    {
+        "id": "overwhelm_009",
+        "primary_emotion": "sadness",
+        "target_risk_level": "Medium",
+        "category": "General Overwhelm",
+        "strategy_name": "IMPROVE the Moment",
+        "tags": ["crying spells", "hopelessness", "coping"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When overwhelmed by despair, make the current moment 10% more tolerable. Use Imagery (visualize a safe place), Meaning (find purpose in the pain), Prayer (or opening to the universe), Relaxation (muscle release), One thing in the moment (hyper-focus), Vacation (take a brief mental break), and Encouragement (cheerlead yourself)."
+    },
+    {
+        "id": "overwhelm_010",
+        "primary_emotion": "realization",
+        "target_risk_level": "Low",
+        "category": "General Overwhelm",
+        "strategy_name": "Self-Soothing via 5 Senses",
+        "tags": ["sensory overload", "autistic burnout", "grounding"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When the environment or your mind is too loud, deliberately curate your sensory input to self-soothe. Look at something beautiful, listen to brown noise, touch a soft blanket, smell a strong essential oil, or taste a sour candy. Overwriting chaotic sensory input with chosen, pleasant input re-anchors the mind."
+    },
+
+    {
+        "id": "acad_001",
+        "primary_emotion": "nervousness",
+        "target_risk_level": "Medium",
+        "category": "Academic Pressure",
+        "strategy_name": "State-Dependent Recall Anchoring",
+        "tags": ["exam anxiety", "blanking out", "technical interviews", "memory"],
+        "source": "Cognitive Psychology",
+        "content": "When freezing during a high-stakes technical test or interview, do not try to force the answer. Instead, deliberately visualize the exact environment where you studied the material. Recall the lighting, the screen setup, and your posture. Reactivating the environmental memory network often acts as a backdoor to retrieve the blocked technical data."
+    },
+    {
+        "id": "acad_002",
+        "primary_emotion": "confusion",
+        "target_risk_level": "Medium",
+        "category": "Academic Pressure",
+        "strategy_name": "The 'Black Box' Deconstruction",
+        "tags": ["overwhelm", "complex systems", "learning paralysis"],
+        "source": "Constructivist Learning Theory",
+        "content": "When overwhelmed by a massive, interconnected topic (like a complex system architecture), stop trying to understand the whole. Draw a literal box. Label it with the system's name. Write exactly what goes IN the box (inputs) and what comes OUT (outputs). Ignore how the inside works until your brain accepts the baseline boundaries."
+    },
+    {
+        "id": "acad_003",
+        "primary_emotion": "annoyance",
+        "target_risk_level": "Low",
+        "category": "Academic Pressure",
+        "strategy_name": "Pattern Interrupt for Debugging Loops",
+        "tags": ["frustration", "problem solving", "fixation"],
+        "source": "Gestalt Psychology",
+        "content": "If you have spent more than 45 minutes fixing the same logical error or broken module with increasing anger, you are in a cognitive tunnel. Stand up and complete a mechanical task requiring spatial awareness (e.g., washing a single dish, organizing a drawer). This forces the brain to shift from focused-mode to diffuse-mode thinking, allowing background pattern recognition to solve the error."
+    },
+    {
+        "id": "acad_004",
+        "primary_emotion": "disappointment",
+        "target_risk_level": "Medium",
+        "category": "Academic Pressure",
+        "strategy_name": "Externalizing the Grade",
+        "tags": ["perfectionism", "failure", "self-worth"],
+        "source": "Rational Emotive Behavior Therapy (REBT)",
+        "content": "When crushed by a poor grade or failed assessment, physically write down the score on a piece of paper and place it across the room. Look at it and state: 'That number reflects my performance on one specific metric on one specific day. It is not an assessment of my global intelligence or future trajectory.' Break the enmeshment between data and identity."
+    },
+    {
+        "id": "acad_005",
+        "primary_emotion": "fear",
+        "target_risk_level": "High",
+        "category": "Academic Pressure",
+        "strategy_name": "Worst-Case Scenario Scripting",
+        "tags": ["catastrophizing", "dropout fears", "thesis"],
+        "source": "Stoic Negative Visualization",
+        "content": "When paralyzed by the fear of failing out of a program, write a step-by-step script of the absolute worst-case scenario. Then, write out your exact, logistical survival plan for that scenario (e.g., 'I will move back home, work this specific job, and pivot to this specific field'). Fear thrives in vagueness; concrete planning strips its power."
+    },
+    {
+        "id": "acad_006",
+        "primary_emotion": "Stress",
+        "target_risk_level": "Medium",
+        "category": "Academic Pressure",
+        "strategy_name": "Pomodoro with Somatic Reset",
+        "tags": ["focus", "burnout prevention", "posture"],
+        "source": "Somatic Experiencing",
+        "content": "During intense study blocks, the body stores stress as muscular tension, mimicking a threat response. Every 25 minutes, do not look at your phone. Instead, do a 60-second 'somatic reset': physically shake your hands, roll your neck, and push your feet hard into the floor to discharge accumulated cortisol."
+    },
+    {
+        "id": "acad_007",
+        "primary_emotion": "envy",
+        "target_risk_level": "Low",
+        "category": "Academic Pressure",
+        "strategy_name": "Compare-and-Despair Reframing",
+        "tags": ["imposter syndrome", "cohort comparison", "jealousy"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "When feeling inferior to peers who seem to grasp concepts faster, identify the specific 'invisible variables.' Tell yourself: 'I am comparing my internal struggle to their curated external output. I do not know their background resources, prior exposure, or hidden failures.' Pivot your focus back to your own baseline metric."
+    },
+    {
+        "id": "acad_008",
+        "primary_emotion": "Depression",
+        "target_risk_level": "High",
+        "category": "Academic Pressure",
+        "strategy_name": "The 'Ugly First Draft' Mandate",
+        "tags": ["procrastination", "perfectionism", "apathy"],
+        "source": "Behavioral Activation",
+        "content": "When depression makes starting a project feel impossible, lower the bar to zero. Open a document and explicitly type: 'This is the ugly, terrible version that I am allowed to hate.' Give yourself permission to write objectively bad material. You cannot edit a blank page, but you can refine a terrible draft."
+    },
+    {
+        "id": "acad_009",
+        "primary_emotion": "surprise",
+        "target_risk_level": "Low",
+        "category": "Academic Pressure",
+        "strategy_name": "Cognitive Reappraisal of Arousal",
+        "tags": ["pop quizzes", "unexpected deadlines", "shock"],
+        "source": "Biopsychology",
+        "content": "When hit with a sudden deadline or pop quiz, your body floods with adrenaline, which feels like panic. Immediately relabel the physiological sensation out loud: 'I am not panicking, my body is mobilizing energy to help me focus.' Reappraising arousal as excitement or readiness prevents the brain from entering a freeze state."
+    },
+    {
+        "id": "acad_010",
+        "primary_emotion": "optimism",
+        "target_risk_level": "Low",
+        "category": "Academic Pressure",
+        "strategy_name": "Future-Self Delegation",
+        "tags": ["planning", "motivation", "momentum"],
+        "source": "Solution-Focused Brief Therapy (SFBT)",
+        "content": "When feeling highly motivated, do not just study harder—build infrastructure. Create templates, organize folders, or map out tomorrow's schedule. Treat your 'Optimistic Current Self' as an assistant setting up a frictionless environment for your 'Tired Future Self'."
+    },
+    {
+        "id": "work_001",
+        "primary_emotion": "Anxiety",
+        "target_risk_level": "Medium",
+        "category": "Workplace Burnout",
+        "strategy_name": "Boundary Anchoring via Ritual",
+        "tags": ["remote work", "work-life balance", "hyper-vigilance"],
+        "source": "Context-Dependent Conditioning",
+        "content": "If you work and relax in the same space, your brain cannot switch off. Create a strict, physical 'shutdown ritual.' At the end of the workday, close all tabs, say out loud 'The workday is complete,' and physically cover your laptop or workspace with a towel or cloth. This visual cue acts as a psychological off-switch."
+    },
+    {
+        "id": "work_002",
+        "primary_emotion": "anger",
+        "target_risk_level": "High",
+        "category": "Workplace Burnout",
+        "strategy_name": "The 'Not My Circus' De-escalation",
+        "tags": ["toxic culture", "micromanagement", "resentment"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "When enraged by poor management or toxic colleagues, internally visualize a glass wall dropping between you and them. Repeat the mantra: 'Their dysfunction is their property, not my responsibility.' Refuse to absorb the emotional weight of systemic incompetence that you do not have the authority to fix."
+    },
+    {
+        "id": "work_003",
+        "primary_emotion": "sadness",
+        "target_risk_level": "Medium",
+        "category": "Workplace Burnout",
+        "strategy_name": "Value-Extraction Mapping",
+        "tags": ["dead-end job", "boredom", "loss of purpose"],
+        "source": "Logotherapy",
+        "content": "If your job feels meaningless, shift from 'What is this job doing to me?' to 'What am I extracting from this job?' Identify three highly specific, transferable skills you are getting paid to practice right now (e.g., conflict resolution, a specific software, patience). Frame the job merely as a funded training ground for your next step."
+    },
+    {
+        "id": "work_004",
+        "primary_emotion": "embarrassment",
+        "target_risk_level": "Medium",
+        "category": "Workplace Burnout",
+        "strategy_name": "The 10-10-10 Reality Check",
+        "tags": ["mistakes", "public speaking", "shame"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "After making a public mistake in a meeting or sending a flawed email, halt the shame spiral by asking: 'Will this matter in 10 days? 10 months? 10 years?' The answer is almost always no. Acknowledge that the 'spotlight effect' makes you believe everyone is analyzing your failure, when in reality, they are focused on themselves."
+    },
+    {
+        "id": "work_005",
+        "primary_emotion": "Stress",
+        "target_risk_level": "High",
+        "category": "Workplace Burnout",
+        "strategy_name": "Ruthless Prioritization (The 1-3-5 Rule)",
+        "tags": ["overload", "task paralysis", "deadlines"],
+        "source": "Executive Functioning Coaching",
+        "content": "When overwhelmed by an infinite task list, constrain yourself mechanically. You are only allowed to choose: 1 Major Task, 3 Medium Tasks, and 5 Small Tasks for the entire day. Hide the rest of the list. By mathematically limiting your scope, you bypass decision fatigue and regain agency."
+    },
+    {
+        "id": "work_006",
+        "primary_emotion": "disapproval",
+        "target_risk_level": "Low",
+        "category": "Workplace Burnout",
+        "strategy_name": "Constructive Depersonalization of Feedback",
+        "tags": ["performance reviews", "criticism", "defensiveness"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When receiving harsh feedback, separate your ego from the output. Imagine the reviewer is critiquing a piece of machinery you happen to operate, not your soul. Extract the actionable data point (e.g., 'the report needs more metrics') and discard the emotional phrasing (e.g., 'this is sloppy')."
+    },
+    {
+        "id": "work_007",
+        "primary_emotion": "nervousness",
+        "target_risk_level": "Medium",
+        "category": "Workplace Burnout",
+        "strategy_name": "Power-Posing & Vagal Toning",
+        "tags": ["interviews", "negotiation", "intimidation"],
+        "source": "Embodied Cognition",
+        "content": "Five minutes before a high-stakes meeting, go to a private space. Stand with your feet wide and hands on your hips (expansive posture) while humming loudly from your chest. The posture decreases cortisol, while the vocal cord vibration stimulates the vagus nerve, biologically overriding the subservient fear response."
+    },
+    {
+        "id": "work_008",
+        "primary_emotion": "pride",
+        "target_risk_level": "Low",
+        "category": "Workplace Burnout",
+        "strategy_name": "The 'Brag Document' Integration",
+        "tags": ["imposter syndrome", "promotion", "self-advocacy"],
+        "source": "Narrative Therapy",
+        "content": "Capitalize on moments of professional success by immediately logging them in a dedicated 'Brag Document'. Detail the exact problem, your specific action, and the result. Relying on memory for performance reviews invites imposter syndrome; relying on a concrete, self-authored dataset builds unshakeable professional confidence."
+    },
+    {
+        "id": "work_009",
+        "primary_emotion": "disgust",
+        "target_risk_level": "High",
+        "category": "Workplace Burnout",
+        "strategy_name": "Moral Injury Boundaries",
+        "tags": ["ethical conflicts", "corporate hypocrisy", "alienation"],
+        "source": "Trauma-Informed Care",
+        "content": "When forced to execute policies you find ethically repulsive, document your objections cleanly in writing, then detach. Tell yourself: 'I am operating within a compromised system. I am selling my labor, not my morality.' Plan an active exit strategy so the compromise feels temporary, not permanent."
+    },
+    {
+        "id": "work_010",
+        "primary_emotion": "neutral",
+        "target_risk_level": "Low",
+        "category": "Workplace Burnout",
+        "strategy_name": "Micro-Pacing (The 85% Rule)",
+        "tags": ["hustle culture", "endurance", "chronic fatigue"],
+        "source": "Sports Psychology",
+        "content": "Operating at 100% capacity daily guarantees burnout. Intentionally aim to operate at 85% effort. This leaves a 15% biological reserve for emergencies, unexpected tasks, or emotional regulation. Perfect compliance is less sustainable than consistent, adequate performance."
+    },
+    {
+        "id": "mh_001",
+        "primary_emotion": "Bipolar",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "The 'Dark Therapy' Protocol",
+        "tags": ["mania", "hypomania", "sensory reduction"],
+        "source": "Chronotherapy",
+        "content": "If you recognize the early signs of a manic escalation (racing thoughts, decreased need for sleep), forcefully enforce 'virtual darkness' for 14 hours a day. Block all blue light, use blackout curtains, and eliminate screens after 6 PM. Simulating extended nights chemically forces the brain to produce melatonin and suppress manic acceleration."
+    },
+    {
+        "id": "mh_002",
+        "primary_emotion": "Personality disorder",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Fact-Checking 'Splitting' (Black/White Thinking)",
+        "tags": ["BPD", "idealization", "devaluation", "abandonment"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When suddenly feeling that a loved one is entirely evil or hates you, pause the reaction. Draw a line down a paper. On the left, write the current trigger (e.g., 'They didn't text back'). On the right, write 3 times they showed you care in the last month. Force your brain to hold both positive and negative truths simultaneously."
+    },
+    {
+        "id": "mh_003",
+        "primary_emotion": "Suicidal",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "The 'Delay, Don't Decide' Contract",
+        "tags": ["crisis", "ideation", "safety planning"],
+        "source": "Collaborative Assessment and Management of Suicidality (CAMS)",
+        "content": "In an acute crisis, the brain craves the permanence of an exit. Do not try to convince yourself to live for the next 50 years; that is too overwhelming. Make a concrete, ironclad agreement to delay any action for exactly 48 hours. Focus only on surviving the delay window by sleeping or distracting. Ideation is a wave; it always peaks and crests."
+    },
+    {
+        "id": "mh_004",
+        "primary_emotion": "grief",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "The 'Growing Around the Grief' Visualization",
+        "tags": ["complex trauma", "loss", "PTSD"],
+        "source": "Tonkin’s Model of Grief",
+        "content": "Stop expecting the grief to 'shrink' over time. Visualize your grief as a large black sphere in a jar. The sphere never gets smaller. Instead, visualize the jar (your life, your experiences, your capacity) expanding around it. Focus on building the jar through new, safe experiences, rather than trying to erase the sphere."
+    },
+    {
+        "id": "mh_005",
+        "primary_emotion": "remorse",
+        "target_risk_level": "Medium",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Reparation over Rumination",
+        "tags": ["moral OCD", "guilt", "toxic shame"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "When tortured by guilt over a past mistake, recognize that rumination is a selfish way of punishing yourself without helping anyone. Shift from internal torture to external action. If you can safely apologize, do it once, cleanly. If you cannot, donate time or money to a cause related to your mistake. Make the guilt functional."
+    },
+    {
+        "id": "mh_006",
+        "primary_emotion": "fear",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Grounding via Peripheral Vision",
+        "tags": ["hyper-vigilance", "PTSD", "flashbacks"],
+        "source": "Polyvagal Theory",
+        "content": "During a flashback or trauma trigger, your vision narrows to a hyper-focused tunnel (predator/prey mode). Intentionally soften your gaze and stretch your awareness to the extreme edges of your peripheral vision. Taking in a wide horizontal field of view biologically signals the brainstem that the environment is safe and clear of immediate threats."
+    },
+    {
+        "id": "mh_007",
+        "primary_emotion": "Anxiety",
+        "target_risk_level": "Medium",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Worry Scripting (Exposure)",
+        "tags": ["GAD", "intrusive thoughts", "rumination"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "If you are obsessed with a terrifying thought, do not push it away. Write out the fear in excruciating, vivid detail for 15 straight minutes. Do not stop typing or writing. By forcing the brain to confront the specific narrative rather than a vague shadow of dread, the amygdala eventually habituates and the anxiety burns itself out."
+    },
+    {
+        "id": "mh_008",
+        "primary_emotion": "Depression",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Opposite Action to Lethargy",
+        "tags": ["MDD", "psychomotor retardation", "isolation"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When severe depression dictates that you must stay in bed with the lights off, recognize this as a symptom, not a truth. Identify the exact opposite action: stand up, turn on a bright light, and put cold water on your face. You do not have to feel better to move; you move to manipulate the chemistry that will eventually make you feel better."
+    },
+    {
+        "id": "mh_009",
+        "primary_emotion": "Personality disorder",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "The 'Wise Mind' Intersect",
+        "tags": ["impulsivity", "emotional dysregulation", "BPD"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "Before making a highly destructive or impulsive choice (e.g., sending a vicious text, quitting a job in a rage), draw two overlapping circles. One is 'Emotion Mind' (how you feel), one is 'Reason Mind' (pure logic). Write the demands of both. You are only permitted to act on a decision that exists in the overlapping middle: the 'Wise Mind'."
+    },
+    {
+        "id": "mh_010",
+        "primary_emotion": "Bipolar",
+        "target_risk_level": "Medium",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Energy Budgeting (Spoon Theory)",
+        "tags": ["depressive crash", "chronic illness", "pacing"],
+        "source": "Chronic Illness Management",
+        "content": "During the depressive phase following a manic episode, visualize having only 10 'energy tokens' for the day. A shower costs 3. Making food costs 4. Checking emails costs 3. Once the 10 tokens are gone, you are done. Refuse all other demands without guilt. Radical pacing prevents further neurochemical depletion."
+    },
+    {
+        "id": "gen_001",
+        "primary_emotion": "caring",
+        "target_risk_level": "Low",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "The 'Drop the Rope' Strategy",
+        "tags": ["arguments", "enmeshment", "toxic family"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "When trapped in a cyclical, unwinnable argument with a stubborn person, imagine you are playing tug-of-war over a pit. The only way to win is to realize you don't have to pull back. Simply open your hands and drop the rope. Say, 'I hear your perspective,' and disengage. You cannot be pulled into the pit if you aren't holding the rope."
+    },
+    {
+        "id": "gen_002",
+        "primary_emotion": "sadness",
+        "target_risk_level": "Medium",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "Scheduling 'Pity Time'",
+        "tags": ["breakups", "loneliness", "wallowing"],
+        "source": "Strategic Therapy",
+        "content": "If you are consumed by sadness over a breakup or rejection, do not try to 'stay positive.' Set an alarm for 20 minutes. During this time, you must cry, listen to sad music, and wallow with maximum intensity. When the alarm sounds, the pity party is strictly over. Compartmentalizing the emotion prevents it from bleeding into your entire day."
+    },
+    {
+        "id": "gen_003",
+        "primary_emotion": "annoyance",
+        "target_risk_level": "Low",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "The 5-Minute Favor Rule",
+        "tags": ["social fatigue", "obligations", "resentment"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "When overwhelmed by people asking for your time or help, implement a hard filter: If the request takes 5 minutes or less, do it immediately. If it takes more, you must say, 'Let me check my schedule and get back to you.' This breaks the habit of automatic, people-pleasing 'yes' responses."
+    },
+    {
+        "id": "gen_004",
+        "primary_emotion": "love",
+        "target_risk_level": "Medium",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "Differentiating Love from Codependency",
+        "tags": ["relationships", "anxious attachment", "boundaries"],
+        "source": "Attachment Theory",
+        "content": "When feeling intensely driven to 'fix' a partner's mood, pause. Ask yourself: 'Am I doing this to support them, or am I doing this to alleviate my own anxiety about their mood?' True love allows the other person to experience their own distress without you frantically orchestrating their rescue."
+    },
+    {
+        "id": "gen_005",
+        "primary_emotion": "gratitude",
+        "target_risk_level": "Low",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "Specific, Micro-Gratitude",
+        "tags": ["depression", "cynicism", "reframing"],
+        "source": "Positive Psychology",
+        "content": "Generic gratitude ('I'm thankful for my health') quickly loses its psychological impact. Force your brain to scan for novel, micro-gratitudes. E.g., 'I am grateful the coffee was perfectly hot today,' or 'I appreciate that the bus was on time.' Training the brain to hunt for small positives overrides the default negative bias."
+    },
+    {
+        "id": "gen_006",
+        "primary_emotion": "excitement",
+        "target_risk_level": "Low",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "Harnessing the Zeigarnik Effect",
+        "tags": ["ADHD", "hyper-focus", "starting projects"],
+        "source": "Cognitive Psychology",
+        "content": "If you are prone to getting overly excited about new hobbies but abandoning them, use the Zeigarnik effect (brains obsess over unfinished tasks). Always stop your work session right in the middle of a sentence, or leaving a piece half-assembled. This creates a psychological itch that makes it overwhelmingly easy to resume the next day."
+    },
+    {
+        "id": "gen_007",
+        "primary_emotion": "desire",
+        "target_risk_level": "Medium",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "Urge Delay Protocol",
+        "tags": ["addiction", "shopping", "impulse control"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When overwhelmed by a desire to consume (alcohol, online shopping, texting an ex), implement a mandatory 20-minute delay. Tell yourself: 'I am allowed to do this, but I must wait 20 minutes.' Use that time to drink water and change rooms. Often, the physiological peak of the craving passes within that window."
+    },
+    {
+        "id": "gen_008",
+        "primary_emotion": "realization",
+        "target_risk_level": "Low",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "The 'Is It True?' Inquiry",
+        "tags": ["assumptions", "paranoia", "miscommunication"],
+        "source": "The Work (Byron Katie)",
+        "content": "When struck by a painful realization (e.g., 'My friends are hanging out without me, they hate me'), stop and ask four questions: 1. Is it true? 2. Can I absolutely know it's true? 3. How do I react when I believe this thought? 4. Who would I be without this thought? Dismantle the narrative before reacting to it."
+    },
+    {
+        "id": "gen_009",
+        "primary_emotion": "relief",
+        "target_risk_level": "Low",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "Anchoring the Safety Cue",
+        "tags": ["post-crisis", "trauma recovery", "nervous system"],
+        "source": "Somatic Experiencing",
+        "content": "When a stressful event finally ends and you feel relief, do not just rush to the next task. Stop for 30 seconds. Put your hand on your stomach and explicitly tell your nervous system: 'The threat is gone. We are safe now.' Actively downloading the sensation of safety rewires the brain to heal from chronic stress."
+    },
+    {
+        "id": "gen_010",
+        "primary_emotion": "Normal",
+        "target_risk_level": "Low",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "Preventative Maintenance (The HALT Method)",
+        "tags": ["daily routine", "stability", "self-care"],
+        "source": "Addiction Recovery Models",
+        "content": "Even on a totally normal day, prevent sudden mood crashes by checking the HALT acronym every few hours. Are you Hungry, Angry, Lonely, or Tired? Address the basic biological or social deficit immediately before it escalates into a larger psychological crisis."
+    },
+    {
+        "id": "gen_011",
+        "primary_emotion": "curiosity",
+        "target_risk_level": "Low",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "The 'Beginner’s Mind' Approach",
+        "tags": ["boredom", "mindfulness", "stagnation"],
+        "source": "Zen Buddhism / Mindfulness",
+        "content": "When life feels dull or a relationship feels stagnant, approach a mundane routine as if you were an alien experiencing it for the first time. Pay extreme attention to the texture of the food, the tone of your partner's voice, or the route of your commute. Curiosity destroys apathy."
+    },
+    {
+        "id": "gen_012",
+        "primary_emotion": "amusement",
+        "target_risk_level": "Low",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "Paradoxical Intention",
+        "tags": ["insomnia", "performance anxiety", "hyper-fixation"],
+        "source": "Logotherapy",
+        "content": "If you are suffering from insomnia, stop trying to force yourself to sleep. Instead, lie in the dark and try as hard as you can to stay awake. Keep your eyes open. By treating the problem with absurdity and attempting the exact opposite, you remove the anticipatory anxiety, allowing the body to relax."
+    },
+    {
+        "id": "gen_013",
+        "primary_emotion": "approval",
+        "target_risk_level": "Low",
+        "category": "Generalized Coping & Social",
+        "strategy_name": "Self-Validation Scripts",
+        "tags": ["people pleasing", "insecurity", "validation"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When desperately seeking approval from others for a decision you made, cut out the middleman. Say to yourself out loud in a mirror: 'My decision makes sense given the information I had and the goals I hold. I approve of my own action.' Become the primary source of your own psychological endorsement."
+    },
+    {
+        "id": "acad_011",
+        "primary_emotion": "Stress",
+        "target_risk_level": "High",
+        "category": "Academic Pressure",
+        "strategy_name": "The 'Two-Minute Rule' for Executive Dysfunction",
+        "tags": ["ADHD", "starting tasks", "paralysis"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "When totally paralyzed by an assignment, promise yourself you will only work on it for exactly 120 seconds. Set a timer. Once the timer goes off, you are fully allowed to quit with no guilt. Often, the hardest part is overcoming the friction of starting; once in motion, the brain is more likely to stay in motion."
+    },
+    {
+        "id": "acad_012",
+        "primary_emotion": "disgust",
+        "target_risk_level": "Medium",
+        "category": "Academic Pressure",
+        "strategy_name": "Re-framing Academic 'Busywork'",
+        "tags": ["cynicism", "boredom", "rebellion"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "When feeling disgust toward rote memorization or pointless assignments, stop resisting the reality of the hoop you have to jump through. Reframe the task from 'learning' to 'compliance training.' Tell yourself: 'I am practicing my ability to execute boring tasks on command, which is a highly lucrative skill in the real world.'"
+    },
+    {
+        "id": "work_011",
+        "primary_emotion": "fear",
+        "target_risk_level": "Medium",
+        "category": "Workplace Burnout",
+        "strategy_name": "The 'Pre-Mortem' Analysis",
+        "tags": ["project launch", "anxiety", "leadership"],
+        "source": "Organizational Psychology",
+        "content": "Before starting a terrifying new project or role, assume it has already failed completely. Write down every reason why the failure happened. By facing the ultimate fear logically, you generate a precise list of preventative measures, transforming generalized terror into a concrete to-do list."
+    },
+    {
+        "id": "work_012",
+        "primary_emotion": "annoyance",
+        "target_risk_level": "Low",
+        "category": "Workplace Burnout",
+        "strategy_name": "Communication Batching",
+        "tags": ["interruptions", "emails", "slack fatigue"],
+        "source": "Productivity Psychology",
+        "content": "To prevent chronic annoyance from constant notifications, turn off all alerts. Check emails and messages only at three scheduled intervals per day (e.g., 9 AM, 12 PM, 4 PM). Train your colleagues that you operate on asynchronous, deep-work schedules rather than immediate, reactive availability."
+    },
+    {
+        "id": "work_013",
+        "primary_emotion": "sadness",
+        "target_risk_level": "High",
+        "category": "Workplace Burnout",
+        "strategy_name": "Grieving the 'Dream Job' Myth",
+        "tags": ["disillusionment", "layoffs", "career crisis"],
+        "source": "Grief Therapy",
+        "content": "When crushed because your chosen career path is toxic or underpaying, allow yourself to formally grieve the 'dream job' you thought you were getting. Acknowledge the loss of that idealized future. Accept that work is an economic transaction, and begin sourcing your primary identity and joy from outside the capitalist structure."
+    },
+    {
+        "id": "mh_011",
+        "primary_emotion": "Personality disorder",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Identifying the 'Ghost Ship'",
+        "tags": ["identity disturbance", "emptiness", "chameleon effect"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "If you suffer from identity instability and constantly mirror others, write down a 'Core Identity Anchor List'. List 5 absolute facts about your preferences that remain true regardless of who is in the room (e.g., 'I prefer tea over coffee', 'I hate loud music'). When you feel yourself dissolving into someone else's personality, review the list to find the floor."
+    },
+    {
+        "id": "mh_012",
+        "primary_emotion": "Anxiety",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "The 'Float, Don't Fight' Technique",
+        "tags": ["panic disorder", "agoraphobia", "hyperventilation"],
+        "source": "The Claire Weekes Method",
+        "content": "When a severe panic attack hits, struggling against it acts like adding fuel to a fire. Physically slump your shoulders, release your jaw, and imagine yourself floating on a wave. Say, 'I accept this feeling. Do your worst.' Demanding the panic to increase paradoxically short-circuits the adrenal feedback loop."
+    },
+    
+    {
+        "id": "tech_001",
+        "primary_emotion": "nervousness",
+        "target_risk_level": "High",
+        "category": "Career & Interview Anxiety",
+        "strategy_name": "The 'Micro-Component' Grounding",
+        "tags": ["technical interviews", "whiteboard freeze", "blanking out", "performance anxiety"],
+        "source": "Cognitive Behavioral Therapy (CBT)",
+        "content": "When your mind goes completely blank during a technical interview or high-stakes assessment, state the freeze aloud objectively: 'I need a moment to map the architecture.' Use that moment to draw or write the absolute smallest, simplest component of the system (like the data ingestion step). Grounding yourself in a micro-success reboots your working memory."
+    },
+    {
+        "id": "tech_002",
+        "primary_emotion": "confusion",
+        "target_risk_level": "Medium",
+        "category": "Project Overwhelm",
+        "strategy_name": "Abstraction Layering",
+        "tags": ["complex systems", "building from scratch", "cognitive overload"],
+        "source": "Constructivist Learning Theory",
+        "content": "When bypassing pre-built frameworks to build custom, modular systems from scratch, the cognitive load can cause paralysis. Apply 'Abstraction Layering.' Hide all sub-modules from your view and write the orchestrator pseudocode first. Define only what the inputs and outputs of each module must be before worrying about the internal mechanics."
+    },
+    {
+        "id": "tech_003",
+        "primary_emotion": "annoyance",
+        "target_risk_level": "Medium",
+        "category": "Workplace Burnout",
+        "strategy_name": "The Hard Context Switch",
+        "tags": ["debugging loops", "frustration", "hyper-fixation"],
+        "source": "Gestalt Psychology",
+        "content": "When stuck in a toxic, multi-hour loop of manually fixing the same pipeline or logic bug, enforce a 'Hard Context Switch.' Step away from the screen and engage in a tactile, non-digital task that requires spatial reasoning (e.g., assembling something, sketching on paper). This forces brain activity from the exhausted focused-mode to the diffuse-network, allowing background processing to find the solution."
+    },
+    {
+        "id": "tech_004",
+        "primary_emotion": "caring",
+        "target_risk_level": "High",
+        "category": "Caregiver Burnout",
+        "strategy_name": "De-roling from High-Stakes Systems",
+        "tags": ["vicarious trauma", "safeguard systems", "empathy fatigue"],
+        "source": "Trauma-Informed Care",
+        "content": "If you are developing tools designed to detect fraud, harm, or psychological distress, you are vulnerable to vicarious burnout. Implement 'De-roling.' At the end of your work session, explicitly state aloud, 'I am stepping out of the safeguard role. I cannot fix the world's risks right now.' Wash your hands or change your physical environment to signal the transition."
+    },
+    {
+        "id": "imposter_001",
+        "primary_emotion": "disappointment",
+        "target_risk_level": "Medium",
+        "category": "Imposter Syndrome",
+        "strategy_name": "The 'Invisible Variables' Audit",
+        "tags": ["comparing portfolios", "inadequacy", "self-doubt"],
+        "source": "Cognitive Restructuring",
+        "content": "When feeling inferior while looking at the polished GitHub repositories or achievements of peers, halt the comparison. Explicitly list the 'invisible variables' you cannot see: their uncommitted failed code, their background advantages, their copy-pasted templates, and their hidden burnout. Re-anchor your benchmark exclusively to your own progress from 6 months ago."
+    },
+    {
+        "id": "dig_001",
+        "primary_emotion": "Stress",
+        "target_risk_level": "Medium",
+        "category": "Digital Overload",
+        "strategy_name": "Sensory Deprivation Micro-Breaks",
+        "tags": ["screen fatigue", "notification overload", "overstimulation"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When completely overwhelmed by digital noise, do not switch to a different app to 'relax.' Close your laptop, put in noise-canceling headphones (with no audio playing), and cover your eyes for 3 straight minutes. Removing all audiovisual inputs forces the central nervous system to drop its defensive hyper-vigilance."
+    },
+    {
+        "id": "dig_002",
+        "primary_emotion": "curiosity",
+        "target_risk_level": "Low",
+        "category": "Digital Overload",
+        "strategy_name": "The 'Parking Lot' Technique",
+        "tags": ["distraction", "rabbit holes", "ADHD tendencies"],
+        "source": "Executive Functioning Coaching",
+        "content": "When deep in focused work and suddenly struck by a desperate urge to research an unrelated topic or optimize a minor feature, do not open a new tab. Write the urge down in a physical notepad labeled 'The Parking Lot.' Tell your brain, 'We are not ignoring this, we are deferring it to 5:00 PM.' This satisfies the novelty-craving dopamine spike without derailing your workflow."
+    },
+    {
+        "id": "dig_003",
+        "primary_emotion": "disgust",
+        "target_risk_level": "High",
+        "category": "Digital Overload",
+        "strategy_name": "Values-Based Consumption Audit",
+        "tags": ["doomscrolling", "algorithmic fatigue", "cynicism"],
+        "source": "Acceptance and Commitment Therapy (ACT)",
+        "content": "When feeling deep disgust toward the state of the internet or your own doomscrolling habits, define two core values (e.g., 'Learning' and 'Connection'). Audit your last hour of browsing. If the content did not serve those values, log off and perform one physical action that does (e.g., read a physical book, text a friend). Reclaim agency from algorithmic manipulation."
+    },
+    {
+        "id": "mh_013",
+        "primary_emotion": "Bipolar",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Chronotherapeutic Lockdown",
+        "tags": ["late-night productivity", "hypomania", "sleep architecture"],
+        "source": "Interpersonal and Social Rhythm Therapy (IPSRT)",
+        "content": "When late-night hyper-focus feels exhilarating but you recognize the signs of manic escalation, you must treat sleep as emergency medicine. At 10:00 PM, power down all devices regardless of your workflow state. Do not trust the hypomanic thought that 'I just need to finish this one module.' Lock down your circadian rhythm to prevent a neurochemical crash."
+    },
+    {
+        "id": "mh_014",
+        "primary_emotion": "Personality disorder",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Fact-Checking Rejection Sensitivity",
+        "tags": ["code reviews", "criticism", "abandonment fears", "BPD"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When receiving critical feedback (like a harsh PR review or a blunt email) triggers a catastrophic sense of worthlessness, separate the data from the narrative. Write down the exact words used in the feedback on one side of a page. On the other side, write your emotional interpretation. Force yourself to only address the literal data, actively ignoring the 'they hate me' narrative."
+    },
+    {
+        "id": "mh_015",
+        "primary_emotion": "Depression",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Somatic Re-engagement",
+        "tags": ["lethargy", "anhedonia", "dissociation"],
+        "source": "Somatic Experiencing",
+        "content": "When depression makes you feel like a disembodied ghost staring at a screen, you must shock your proprioceptive system. Stand up and tightly squeeze your muscles, starting from your calves, up to your thighs, core, arms, and face. Hold for 10 seconds, then release. This forceful somatic activation pulls your consciousness back into your physical body."
+    },
+    {
+        "id": "gen_014",
+        "primary_emotion": "remorse",
+        "target_risk_level": "Medium",
+        "category": "Generalized Overwhelm",
+        "strategy_name": "The 'Clean Slate' Forgiveness Protocol",
+        "tags": ["procrastination guilt", "missed deadlines", "self-sabotage"],
+        "source": "Mindful Self-Compassion",
+        "content": "When paralyzed by guilt over wasting the entire day or procrastinating on crucial work, recognize that shame is an indulgence that prevents action. Speak out loud: 'I forgive myself for how I spent the last 8 hours. The past is inaccessible. The next 30 minutes are a clean slate.' Start with a 5-minute microscopic task to break the inertia."
+    },
+    {
+        "id": "gen_015",
+        "primary_emotion": "fear",
+        "target_risk_level": "Medium",
+        "category": "Career & Interview Anxiety",
+        "strategy_name": "Decatastrophizing Rejection",
+        "tags": ["job hunting", "ghosting", "fear of failure"],
+        "source": "Rational Emotive Behavior Therapy (REBT)",
+        "content": "If you are terrified of failing an upcoming interview, follow the fear to its logical conclusion. Ask yourself: 'If I fail, what happens next?' Keep answering until you hit the mundane reality (e.g., 'I will be sad for two days, keep practicing, and apply to a different company'). Stripping the fear of its vague, existential dread makes it manageable."
+    },
+    {
+        "id": "gen_016",
+        "primary_emotion": "optimism",
+        "target_risk_level": "Medium",
+        "category": "Project Overwhelm",
+        "strategy_name": "Scope Creep Reality Testing",
+        "tags": ["over-committing", "feature bloat", "burnout prevention"],
+        "source": "Agile Methodology & ACT",
+        "content": "When high motivation tricks you into expanding a project's scope beyond reason, employ reality testing. Force yourself to map out the exact hour-by-hour timeline required to build the new features. When you see the mathematical impossibility of the schedule, gracefully cut the scope by 50%. Protecting your baseline energy is more important than a flawless final product."
+    },
+    {
+        "id": "gen_017",
+        "primary_emotion": "pride",
+        "target_risk_level": "Medium",
+        "category": "Workplace Burnout",
+        "strategy_name": "Decoupling Ego from Artifact",
+        "tags": ["defensiveness", "perfectionism", "feedback"],
+        "source": "Stoicism",
+        "content": "When you feel fiercely defensive over a project you built, remind yourself: 'I am the architect, not the artifact.' Treat your work like an external tool you forged, not a piece of your soul. If someone finds a flaw in the tool, it does not mean the blacksmith is flawed; it just means the tool needs sharpening."
+    },
+    {
+        "id": "gen_018",
+        "primary_emotion": "embarrassment",
+        "target_risk_level": "Medium",
+        "category": "Career & Interview Anxiety",
+        "strategy_name": "Shame Resilience via Transparency",
+        "tags": ["asking for help", "hiding mistakes", "networking"],
+        "source": "Shame Resilience Theory (Brown)",
+        "content": "When embarrassed because you do not understand a core concept or need help, do not hide. Shame requires secrecy to survive. Reach out to a peer or mentor and explicitly name the feeling: 'I'm feeling a bit embarrassed to ask this, but I'm struggling with X.' Owning the vulnerability instantly neutralizes the power of the shame."
+    },
+    {
+        "id": "gen_019",
+        "primary_emotion": "anger",
+        "target_risk_level": "Medium",
+        "category": "Workplace Burnout",
+        "strategy_name": "Constructive Channeling",
+        "tags": ["system limitations", "red tape", "inefficiency"],
+        "source": "Sublimation (Psychodynamic)",
+        "content": "When infuriated by the limitations of a framework, a platform, or an organization's bureaucracy, do not vent endlessly. Sublimate the anger into a precise, targeted action. Write a highly logical proposal for an alternative, or build a proof-of-concept that bypasses the bottleneck. Turn the heat of the anger into a laser."
+    },
+    {
+        "id": "mh_016",
+        "primary_emotion": "Anxiety",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Environmental Friction Design",
+        "tags": ["compulsions", "obsessive checking", "anxiety loops"],
+        "source": "Behavioral Therapy",
+        "content": "If you are caught in an anxious loop of repeatedly checking stats, emails, or messages, rely on physics, not willpower. Introduce extreme friction. Log out of all accounts, delete the apps, and leave your phone in another room. Make the physical act of acting on your anxiety so exhausting that your brain gives up on the compulsion."
+    },
+    {
+        "id": "rel_001",
+        "primary_emotion": "isolation",
+        "target_risk_level": "High",
+        "category": "General Overwhelm",
+        "strategy_name": "Behavioral Activation for Connection",
+        "tags": ["remote work", "loneliness", "withdrawing"],
+        "source": "Behavioral Activation",
+        "content": "When prolonged intense study or remote work makes you feel entirely disconnected from humanity, do not wait until you 'feel like' socializing. Schedule a low-stakes, 15-minute synchronous interaction (e.g., a coffee chat, a brief phone call). You must manually jumpstart your social circuitry through action, rather than waiting for motivation."
+    },
+    {
+        "id": "rel_002",
+        "primary_emotion": "love",
+        "target_risk_level": "Medium",
+        "category": "Caregiver Burnout",
+        "strategy_name": "Scheduled Presence vs. Continuous Partial Attention",
+        "tags": ["relationships", "distraction", "neglect"],
+        "source": "Mindfulness-Based Stress Reduction",
+        "content": "If the demands of your work are eroding your relationships, stop giving your partner 'continuous partial attention' while you think about code or problems. Dedicate 30 minutes of aggressive, device-free, undivided attention. Look at them. Listen actively. A concentrated block of true presence is far more nourishing than 5 hours of distracted physical proximity."
+    },
+    {
+        "id": "gen_020",
+        "primary_emotion": "realization",
+        "target_risk_level": "Medium",
+        "category": "Project Overwhelm",
+        "strategy_name": "Sunk Cost Cognitive Reframing",
+        "tags": ["pivoting", "abandoning work", "wasted time"],
+        "source": "Behavioral Economics & CBT",
+        "content": "When you realize the project architecture you spent weeks on is fundamentally flawed, combat the urge to stick with it out of stubbornness. Reframe the loss: 'The past three weeks were not wasted; they were the tuition I paid to learn exactly what does not work.' Cut your losses cleanly and pivot without self-punishment."
+    },
+    {
+        "id": "gen_021",
+        "primary_emotion": "surprise",
+        "target_risk_level": "Medium",
+        "category": "General Overwhelm",
+        "strategy_name": "Radical Acceptance of the Pivot",
+        "tags": ["sudden failures", "unexpected errors", "shock"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When hit with a sudden, catastrophic failure (a server crash, a failed exam, a rejected application), stop fighting the reality of the moment. Say: 'This is the exact situation I am in right now. I do not like it, but it is happening.' Bypassing the 'why me?' phase saves critical cognitive energy needed to execute the recovery plan."
+    },
+    {
+        "id": "mh_017",
+        "primary_emotion": "neutral",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "Tactical Sensory Seeking",
+        "tags": ["anhedonia", "numbness", "flat affect"],
+        "source": "Sensory Integration Therapy",
+        "content": "When experiencing emotional flatlining or anhedonia, do not try to think your way into feeling joy. Bypass the mind and go to the body. Seek intense, safe sensory input: eat something extremely spicy, take a freezing cold shower, or listen to music at a high volume with deep bass. Shock the nervous system into registering an experience."
+    },
+    {
+        "id": "gen_022",
+        "primary_emotion": "approval",
+        "target_risk_level": "Medium",
+        "category": "Imposter Syndrome",
+        "strategy_name": "Internalizing the Locus of Control",
+        "tags": ["validation seeking", "people pleasing", "mentorship"],
+        "source": "Cognitive Psychology",
+        "content": "If you are constantly paralyzed until a mentor, boss, or senior peer validates your work, you have externalized your locus of control. Build a personalized rubric for success. Before submitting work, grade it against your own rubric. Say, 'This meets my internal standard of excellence.' Over time, rely more on your rubric than their applause."
+    },
+    {
+        "id": "gen_023",
+        "primary_emotion": "amusement",
+        "target_risk_level": "Low",
+        "category": "General Overwhelm",
+        "strategy_name": "Auditing Dark Humor Avoidance",
+        "tags": ["cynicism", "defensive mechanisms", "burnout"],
+        "source": "Psychodynamic Therapy",
+        "content": "Dark humor is a common coping mechanism in high-stress environments. However, notice when you are using irony to completely shield yourself from genuine pain or exhaustion. Pause and ask, 'What vulnerable truth is this joke hiding?' Allow yourself to drop the cynical armor for 5 minutes and admit that you are actually just tired and stressed."
+    },
+    {
+        "id": "gen_024",
+        "primary_emotion": "relief",
+        "target_risk_level": "Low",
+        "category": "Workplace Burnout",
+        "strategy_name": "Parasympathetic Integration",
+        "tags": ["post-deadline crash", "adrenaline withdrawal", "recovery"],
+        "source": "Polyvagal Theory",
+        "content": "After a massive project concludes or an interview ends, you will likely experience an adrenaline crash that feels like sudden depression or exhaustion. Do not force yourself to immediately start the next task. Give your parasympathetic nervous system 24 hours to metabolize the stress hormones. Rest is not a reward for the work; it is the final phase of the work."
+    },
+    {
+        "id": "gen_025",
+        "primary_emotion": "grief",
+        "target_risk_level": "High",
+        "category": "Career & Interview Anxiety",
+        "strategy_name": "Mourning the Linear Path",
+        "tags": ["career changes", "lost opportunities", "rejection"],
+        "source": "Narrative Therapy",
+        "content": "When an expected career path or major opportunity falls through, you must mourn the loss of the future you had mapped out in your head. Write out a brief narrative of the 'Ghost Ship'—the life you thought you were going to live. Acknowledge it is gone, grieve it briefly, and then purposefully turn your attention to the ship you are actually steering."
+    },
+    {
+        "id": "mh_018",
+        "primary_emotion": "Suicidal",
+        "target_risk_level": "High",
+        "category": "Advanced Mental Health",
+        "strategy_name": "TIPP: Intense Aerobic Output",
+        "tags": ["crisis intervention", "ideation", "agitation"],
+        "source": "Dialectical Behavior Therapy (DBT)",
+        "content": "When trapped in a state of high agitation and dangerous ideation, your body is flooded with unspent fight-or-flight energy. Engage in intense, exhausting aerobic exercise for 10-15 minutes (e.g., sprinting, burpees, rapid stair climbing) until you are physically spent. Expending the biochemical energy forcefully breaks the psychological panic loop."
+    },
+    {
+        "id": "gen_026",
+        "primary_emotion": "Stress",
+        "target_risk_level": "Medium",
+        "category": "Project Overwhelm",
+        "strategy_name": "The 'Satisficing' Threshold",
+        "tags": ["perfectionism", "hyper-parameter tuning", "endless tweaking"],
+        "source": "Decision Theory",
+        "content": "When you find yourself endlessly tweaking models, parameters, or designs for microscopic gains, apply 'Satisficing' (satisfy + suffice). Pre-define the exact metric of 'good enough' before you start (e.g., '85% accuracy is the stopping point'). Once you hit the threshold, you must deploy or move on. Diminishing returns destroy momentum."
+    },
+    {
+        "id": "gen_027",
+        "primary_emotion": "Anxiety",
+        "target_risk_level": "Medium",
+        "category": "Career & Interview Anxiety",
+        "strategy_name": "The 'Reverse Interview' Shift",
+        "tags": ["power dynamics", "intimidation", "self-worth"],
+        "source": "Cognitive Reframing",
+        "content": "If you feel small and intimidated entering a job interview, deliberately shift the power dynamic in your mind. Reframe the interaction: You are a consultant determining if this organization is worthy of your time and expertise. Prepare three probing questions about their culture or technical debt. Evaluating them naturally lowers your anxiety about being evaluated."
+    }
+]
