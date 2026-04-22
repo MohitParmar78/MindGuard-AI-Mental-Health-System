@@ -26,9 +26,11 @@ class MindGuardVectorDB:
         # PersistentClient saves the database directly to your hard drive so you don't lose it when the script stops
         self.chroma_client = chromadb.PersistentClient(path=self.chroma_db_dir)
         
-        # Initialize the Embedding Engine (all-MiniLM-L6-v2)
-        # This is a small, lightning-fast Hugging Face model that turns sentences into math vectors
-        self.embedding_fn = embedding_functions.DefaultEmbeddingFunction()
+        # Upgraded Embedding Engine (BAAI/bge-base-en-v1.5)
+        # This captures significantly more clinical nuance than the default model
+        self.embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
+            model_name="BAAI/bge-base-en-v1.5"
+        )
         
         # Create or load the 'clinical_guidelines' collection
         self.collection = self.chroma_client.get_or_create_collection(
