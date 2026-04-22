@@ -205,8 +205,13 @@ MindGuard-AI-Mental-Health-System/
 │   │   └── shap_explainer.py        ← XLM-R + SHAP pipeline → HTML report
 │   ├── database/
 │   │   └── db_operations.py         ← SQLite CRUD operations
-│   └── audio/
-│       └── audio_processor.py       ← Whisper transcription wrapper
+│   ├── audio/
+│   │   └── audio_processor.py       ← Whisper transcription wrapper
+│   ├── preprocessing/               ← Text cleaning and formatting
+│   │   └── cleaner.py               ← Sanitization logic for inputs/documents
+│   └── rag_engine/                  ← Retrieval-Augmented Generation logic
+│       ├── build_vectordb.py        ← Vector database ingestion/creation
+│       └── retriever.py             ← Semantic search and context fetching
 │
 ├── 📁 artifacts/                    ← Model weights + generated reports
 │   ├── xlmr_weights/
