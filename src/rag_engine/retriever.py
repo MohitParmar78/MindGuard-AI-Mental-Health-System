@@ -22,7 +22,9 @@ class MindGuardRetriever:
         
         # We MUST use the exact same embedding model used during database creation
         # Otherwise, the search query and the database documents will be on different mathematical maps
-        self.embedding_fn = embedding_functions.DefaultEmbeddingFunction()
+        self.embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
+            model_name="BAAI/bge-base-en-v1.5"
+        )
         
         # Access the specific collection of clinical guidelines
         self.collection = self.chroma_client.get_collection(
