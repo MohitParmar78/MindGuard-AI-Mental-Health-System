@@ -1,5 +1,3 @@
-# src/explainability/shap_explainer.py
-
 import os
 import torch
 import shap
