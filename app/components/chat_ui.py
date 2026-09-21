@@ -322,12 +322,7 @@ def render_chat():
                 response = result["response"]
                 emotion = result["emotion"]
                 risk = result["risk_level"]
-
-            # Step B: Run SHAP AFTER the response so the chat feels fast.
-            # The user sees the reply first, then waits briefly for XAI.
-            with st.spinner("Generating XAI word-level explanation…"):
-                # Overwrites artifacts/shap_report.html with a fresh analysis
-                shap_ex.generate_visual_report(prompt)
+                
 
             # Step D: Render the response text in the chat bubble
             st.markdown(response)
@@ -338,6 +333,14 @@ def render_chat():
                 st.markdown(_emotion_badge(emotion), unsafe_allow_html=True)
             with col2:
                 st.markdown(_risk_badge(risk), unsafe_allow_html=True)
+                
+            
+            # Step B: Run SHAP AFTER the response so the chat feels fast.
+            # The user sees the reply first, then waits briefly for XAI.
+            with st.spinner("Generating XAI word-level explanation…"):
+            # Overwrites artifacts/shap_report.html with a fresh analysis
+                shap_ex.generate_visual_report(prompt)
+
 
             # Step F: Embed the SHAP HTML report in a collapsible expander
             _render_shap_inline(SHAP_HTML_PATH)

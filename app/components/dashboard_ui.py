@@ -54,8 +54,12 @@ SHAP_HTML_PATH = os.path.join(
 # ─────────────────────────────────────────────────────────────
 def render_dashboard():
     # Page header in the main content area
-    st.title("📊 Clinical Overview")
-    st.markdown("Real-time emotional tracking, risk assessment, and XAI reports.")
+    st.title("📊 Session Overview")
+    st.markdown("Session-specific emotional tracking, risk assessment, and XAI reports.")
+
+    # main.py creates this once per browser session. Using the same ID here
+    # ensures the dashboard only shows this session's records.
+    session_id = st.session_state.session_id
 
     # ── Create Two Tabs ───────────────────────────────────────
     # st.tabs() returns a list of tab context managers.
@@ -71,15 +75,17 @@ def render_dashboard():
     with tab1:
 
         # ── Database Read ─────────────────────────────────────
-        # Open a database connection to read all historical records
+        # Open a database connection to read this session's records
         db = MindGuardDatabase()
 
-        # Execute a SQL SELECT to fetch the three columns we need,
-        # sorted newest-first so the table shows recent entries at the top
+        # Filter by the current Streamlit session so users cannot see
+        # analytics from other sessions.
         db.cursor.execute(
             "SELECT timestamp, diagnosed_emotion, risk_level "
             "FROM chat_history "
-            "ORDER BY timestamp DESC"
+            "WHERE session_id = ? "
+            "ORDER BY timestamp DESC",
+            (session_id,)
         )
 
         # fetchall() returns a list of sqlite3.Row objects (like dicts)
