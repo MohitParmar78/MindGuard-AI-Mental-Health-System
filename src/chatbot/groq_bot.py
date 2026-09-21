@@ -1,7 +1,10 @@
 import os
 import sys
 from dotenv import load_dotenv
-from groq import Groq
+
+from langchain_groq import ChatGroq
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 
 # --- BULLETPROOF IMPORT PATHING ---
 # We add the main project folder to Python's system path so we can import our other scripts
@@ -29,9 +32,13 @@ class MindGuardChatbot:
         if not api_key:
             raise ValueError("❌ GROQ_API_KEY not found in .env file!")
         
-        # 2. Initialize the Groq LLM Client
-        self.client = Groq(api_key=api_key)
-        
+        # 2. Initialize the Groq LLM Client through LangChain
+        self.llm = ChatGroq(
+            model="openai/gpt-oss-120b",
+            temperature=0.3,
+            api_key=api_key,
+        )
+
         # 3. Wake up our internal tools
         self.predictor = MindGuardPredictor()
         self.retriever = MindGuardRetriever()
@@ -49,6 +56,17 @@ class MindGuardChatbot:
         3. Do not sound like a robot reading a textbook. Weave the clinical strategy naturally into your empathy.
         4. If the Risk Level is 'High', prioritize grounding the user immediately.
         """
+
+        # 5. Assemble the LangChain LCEL generation chain
+        # This wires the system prompt + the per-turn augmented prompt straight
+        # into the Groq LLM, with a string parser unpacking the final reply.
+        # prompt -> llm -> output_parser
+        self.prompt_template = ChatPromptTemplate.from_messages([
+            ("system", self.system_prompt),
+            ("human", "{augmented_prompt}"),
+        ])
+        self.generation_chain = self.prompt_template | self.llm | StrOutputParser()
+
         print("✅ MindGuard Agent is fully operational!")
 
     def generate_response_from_audio(self, audio_file_path):
@@ -104,17 +122,10 @@ class MindGuardChatbot:
         Draft your response to the user's new message now:
         """
         
-        # STEP 5: The Mouth (Groq LLM Generation)
-        chat_completion = self.client.chat.completions.create(
-            messages=[
-                {"role": "system", "content": self.system_prompt},
-                {"role": "user", "content": augmented_prompt}
-            ],
-            model="llama-3.3-70b-versatile",
-            temperature=0.3, 
-        )
-        
-        final_response = chat_completion.choices[0].message.content
+        # STEP 5: The Mouth (Groq LLM Generation, via the LangChain LCEL chain)
+        final_response = self.generation_chain.invoke({
+            "augmented_prompt": augmented_prompt
+        })
         
         print("\n🤖 MINDGUARD:")
         print(final_response)

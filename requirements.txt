@@ -17,6 +17,14 @@ shap>=0.42.0
 sentence-transformers>=2.2.2
 chromadb>=0.4.15
 
+# --- LangChain (RAG orchestration + Groq LLM chain) ---
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-chroma>=0.2.0
+langchain-huggingface>=0.1.0
+langchain-groq>=0.2.0
+
 # --- Conversational AI API ---
 groq>=0.4.0
 
@@ -27,5 +35,3 @@ uvicorn>=0.23.0
 # --- Frontend & Visualization ---
 streamlit>=1.28.0
 plotly>=5.17.0
-
-openai-whisper
