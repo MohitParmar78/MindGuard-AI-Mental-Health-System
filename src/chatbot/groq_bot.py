@@ -1,5 +1,6 @@
 import os
 import sys
+import uuid
 from dotenv import load_dotenv
 
 from langchain_groq import ChatGroq
@@ -69,8 +70,8 @@ class MindGuardChatbot:
 
         print("✅ MindGuard Agent is fully operational!")
 
-    def generate_response_from_audio(self, audio_file_path):
-        """Pipeline: Listen -> Transcribe -> Predict -> Retrieve -> Generate"""
+    def generate_response_from_audio(self, audio_file_path, session_id):
+        """Pipeline: Listen -> Transcribe -> Predict -> Retrieve -> Generate."""
         print("\n" + "="*50)
         print("🎤 RECEIVING VOICE NOTE...")
         
@@ -78,10 +79,21 @@ class MindGuardChatbot:
         transcribed_text = self.audio_processor.transcribe(audio_file_path)
         
         # 2. Pass the transcribed text directly into our existing chatbot pipeline!
-        return self.generate_response(user_input=transcribed_text)
+        return self.generate_response(
+            user_input=transcribed_text,
+            session_id=session_id,
+        )
     
-    def generate_response(self, user_input, session_id="default_user"):
-        """The master pipeline: Predict -> Retrieve -> Remember -> Generate -> Save."""
+    def generate_response(self, user_input, session_id):
+        """Run the request pipeline and return all response metadata.
+
+        The caller must provide a session_id so conversation memory is isolated
+        between users/sessions. Returning the metadata directly also avoids a
+        second, ambiguous "latest row" query from the UI.
+        """
+
+        if not session_id:
+            raise ValueError("session_id is required for every chatbot request")
         
         print("\n" + "="*50)
         print(f"👤 USER: {user_input}")
@@ -141,7 +153,13 @@ class MindGuardChatbot:
             risk_level=risk
         )
         
-        return final_response
+        return {
+            "session_id": session_id,
+            "response": final_response,
+            "emotion": emotion,
+            "confidence": prediction["confidence"],
+            "risk_level": risk,
+        }
 
 # --- EXECUTION BLOCK ---
 if __name__ == "__main__":
@@ -151,6 +169,9 @@ if __name__ == "__main__":
     test_audio_path = os.path.join(project_root, "data", "raw", "demo.mpeg")
     
     try:
-        bot.generate_response_from_audio(test_audio_path)
+        bot.generate_response_from_audio(
+            test_audio_path,
+            session_id=f"cli_{uuid.uuid4().hex}",
+        )
     except Exception as e:
         print(f"Error: {e}")

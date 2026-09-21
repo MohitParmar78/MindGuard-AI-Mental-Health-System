@@ -3,13 +3,14 @@
 # PURPOSE: Renders the entire Chat Companion page.
 #          After every bot response it now:
 #            1. Runs SHAP to explain which words drove the emotion
-#            2. Reads the predicted emotion + risk level from the DB
+#            2. Uses the emotion + risk metadata returned by the chatbot
 #            3. Displays them as colored badges under the message
 #            4. Embeds the SHAP HTML report in a collapsible expander
 # ============================================================
 
 import streamlit as st                          # Core UI framework
 import os                                       # For building file paths
+import uuid                                     # For a unique browser-session ID
 import streamlit.components.v1 as components    # Lets us embed raw HTML (the SHAP report)
 
 # Import our two cached AI loaders from api.py
@@ -140,44 +141,6 @@ def _render_shap_inline(html_path: str):
 
 
 # ─────────────────────────────────────────────────────────────
-# HELPER: Query DB for the most recent emotion + risk level
-# Called immediately after bot.generate_response() because the
-# bot writes the diagnosed_emotion and risk_level to SQLite during
-# response generation. We read it back to display in the UI.
-# ─────────────────────────────────────────────────────────────
-def _get_last_emotion_risk(bot) -> tuple:
-    try:
-        # Import the database class from src (path was fixed in api.py's sys.path setup)
-        from src.database.db_operations import MindGuardDatabase
-
-        db = MindGuardDatabase()   # Open a new DB connection
-
-        # Run a SQL query to get the single most recent row, ordered newest-first
-        db.cursor.execute(
-            "SELECT diagnosed_emotion, risk_level "
-            "FROM chat_history "
-            "ORDER BY timestamp DESC "
-            "LIMIT 1"
-        )
-
-        row = db.cursor.fetchone()   # Fetch the one result row (or None if empty)
-        db.close()                   # Always close the DB connection to avoid leaks
-
-        if row:
-            # dict(row) converts the sqlite3.Row object to a regular Python dict
-            # so we can access columns by name like a dictionary
-            return dict(row)["diagnosed_emotion"], dict(row)["risk_level"]
-
-    except Exception:
-        # Silently swallow any DB errors (e.g., table doesn't exist yet)
-        # so a DB issue never crashes the entire chat UI
-        pass
-
-    # Fallback values if DB is empty or an error occurred
-    return "Unknown", "Unknown"
-
-
-# ─────────────────────────────────────────────────────────────
 # MAIN RENDER FUNCTION
 # Called by main.py when the user selects "💬 Chat Companion"
 # in the sidebar navigation radio buttons.
@@ -200,13 +163,14 @@ def render_chat():
         # messages: a list of dicts. Each dict has at minimum:
         #   { "role": "user"|"assistant", "content": "..." }
         # Assistant messages may also carry:
-        #   { "emotion": "...", "risk": "...", "shap_path": "..." }
+        #   { "emotion": "...", "risk_level": "...", "shap_path": "..." }
         st.session_state.messages = []
 
     if "session_id" not in st.session_state:
-        # session_id is passed to the bot so it can group DB records
-        # per user/session. Hardcoded for demo; replace with auth later.
-        st.session_state.session_id = "demo_user_001"
+        # Keep one unique ID for this browser session. Streamlit reruns the
+        # script frequently, but session_state survives those reruns.
+        # Replace this with the authenticated user ID when auth is added.
+        st.session_state.session_id = f"streamlit_{uuid.uuid4().hex}"
 
     # ── SHAP Report Path ──────────────────────────────────────
     # shap_explainer.py always writes to artifacts/shap_report.html
@@ -258,19 +222,21 @@ def render_chat():
                 with st.spinner("Transcribing and analyzing via Whisper…"):
                     # bot.audio_processor.transcribe() runs Whisper on the .wav file
                     transcribed_text = bot.audio_processor.transcribe(temp_path)
-                    # bot.generate_response() sends the text to Groq LLM + writes to DB
-                    response = bot.generate_response(
+                    # generate_response() returns the response and its metadata;
+                    # no second "latest database row" query is needed.
+                    result = bot.generate_response(
                         user_input=transcribed_text,
                         session_id=st.session_state.session_id
                     )
+
+                    response = result["response"]
+                    emotion = result["emotion"]
+                    risk = result["risk_level"]
 
                 # Run SHAP on the transcribed text.
                 # This writes a new shap_report.html to artifacts/
                 with st.spinner("Generating XAI explanation…"):
                     shap_ex.generate_visual_report(transcribed_text)
-
-                # Pull the emotion + risk level that the bot just saved to the DB
-                emotion, risk = _get_last_emotion_risk(bot)
 
                 # Append the user's (transcribed) voice message to the chat history
                 st.session_state.messages.append({
@@ -284,7 +250,9 @@ def render_chat():
                     "role": "assistant",
                     "content": response,
                     "emotion": emotion,          # e.g. "Anxiety"
-                    "risk": risk,                # e.g. "High"
+                    "risk_level": risk,          # e.g. "High"
+                    "confidence": result["confidence"],
+                    "session_id": result["session_id"],
                     "shap_path": SHAP_HTML_PATH, # Path to render the SHAP report
                 })
                 # NOTE: No st.rerun() here. Streamlit will naturally continue
@@ -322,7 +290,8 @@ def render_chat():
                     # is a raw HTML string, not standard Markdown
                     st.markdown(_emotion_badge(msg["emotion"]), unsafe_allow_html=True)
                 with col2:
-                    st.markdown(_risk_badge(msg["risk"]), unsafe_allow_html=True)
+                    risk_level = msg.get("risk_level", msg.get("risk", "Unknown"))
+                    st.markdown(_risk_badge(risk_level), unsafe_allow_html=True)
 
                 # Render the SHAP explanation report below the badges
                 _render_shap_inline(msg.get("shap_path", ""))
@@ -345,17 +314,20 @@ def render_chat():
 
             # Step A: Get the LLM response (heavy — show spinner to user)
             with st.spinner("Diagnosing emotion and retrieving clinical strategy…"):
-                response = bot.generate_response(prompt, st.session_state.session_id)
+                result = bot.generate_response(
+                    prompt,
+                    session_id=st.session_state.session_id,
+                )
+
+                response = result["response"]
+                emotion = result["emotion"]
+                risk = result["risk_level"]
 
             # Step B: Run SHAP AFTER the response so the chat feels fast.
             # The user sees the reply first, then waits briefly for XAI.
             with st.spinner("Generating XAI word-level explanation…"):
                 # Overwrites artifacts/shap_report.html with a fresh analysis
                 shap_ex.generate_visual_report(prompt)
-
-            # Step C: Read the emotion + risk that the bot stored in SQLite
-            # during generate_response() — this is a near-instant DB read
-            emotion, risk = _get_last_emotion_risk(bot)
 
             # Step D: Render the response text in the chat bubble
             st.markdown(response)
@@ -376,6 +348,8 @@ def render_chat():
             "role": "assistant",
             "content": response,
             "emotion": emotion,           # Predicted emotion label
-            "risk": risk,                 # Risk level (High/Medium/Low)
+            "risk_level": risk,           # Risk level (High/Medium/Low)
+            "confidence": result["confidence"],
+            "session_id": result["session_id"],
             "shap_path": SHAP_HTML_PATH,  # Path to the saved SHAP HTML report
         })
